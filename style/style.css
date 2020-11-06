@@ -1,0 +1,262 @@
+@import 'font.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background: #F1F1F1;
+    font-family: 'Rubik';
+}
+.wraper{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 30px auto 44px;
+    /* max width - максимальная ширина */
+}
+.btn{
+    background:  #3FA5D5;
+    max-width: 211px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 7px 0;
+    border-radius: 30px;
+    color: #FFFFFF;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3) ;
+    /* тень ставит первый параметр влево вправо, второ й- верх вниз, третий - блур эффект 4- толщина тени 5-цвет inset- внутреняя тень*/
+}
+.btn:hover{
+    background: #2A86B1;
+    transition: 500ms;
+}
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    padding: 30px 15px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    transition: 500ms;
+    overflow: hidden;
+    z-index: 999;
+}
+nav:hover{
+    width: 234px;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    width: max-content;
+}
+.navicon{
+    margin: 0 30px 0 15px;
+    font-size: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+nav ul a{
+    color: #939393;
+    transition: 0.5s;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+}
+nav ul a:hover{
+    color: #2A86B1;
+}
+.avatar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.avatar img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+header{
+    background: url(../images/header_bg.png) no-repeat center /cover white ;
+    min-height: 500px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px 62px ;
+}
+.header_content{
+    max-width: 332px;
+    width: 100%;
+}
+.header_tittle{
+    color: #464748;
+    font-size: 50px;
+    font-family: "Rubik Bold";
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header_tittle::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 52px;
+    background: #3FA5D5;
+    position: absolute;
+}
+.header_tittle span{
+    position: relative;
+}
+.header_desc{
+    color: #696868;
+    margin: 25px 0;
+    text-align: justify;
+}
+/* 
+
+
+Products
+
+
+*/
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0 48px;
+}
+
+.products_item{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    max-width: 255px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 32px 18px 19px;
+}
+.products_tittle{
+    color: #2A86B1;
+    font-size: 20px;
+    text-align: center;
+}
+.products_picture{
+    margin: 59px 0 70px;
+}
+
+/*
+
+
+info
+
+
+*/
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+article{
+    max-width: 825px;
+    width: 100%;
+}
+.info_tittle{
+    color: #686868;
+    font-size: 20px;
+    margin: 0 0 22px 15px;
+}
+.info_box{
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.info_box:last-of-type{
+    margin-bottom: 0;
+}
+p.info_box{
+    color: #545454;
+}
+.news{
+    max-width: 255px;
+    width: 100%;
+}
+.news_link{
+    display: flex;
+    align-items: center;
+}
+.news_pic{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.news_content{
+    margin-left: 15px;
+}
+.news_tittle{
+    color: #323232;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+news_desc{
+    font-size: 14px;
+    color: black;
+    font-family: "Rubik Light";
+    line-height: 13px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background:  #3FA5D5;
+    padding: 40px 0;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_logo{
+    color: white;
+    font-family: "Rubik Bold";
+    font-size: 50px;
+}
+.footer_link{
+    color: white;
+    font-size: 18px;
+    font-family: "Rubik Bold";
+    margin-bottom: 15px;
+    text-align: right;
+    display: block;
+}
+.footer_list li:last-of-type .footer_link{
+    font-size: 16px;
+    margin-bottom: 0;
+    font-family: "Rubik";
+}
